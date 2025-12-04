@@ -1,0 +1,7 @@
+1) grep "SEMANAS" consumos.txt -B 1 -A 24 > file1.txt
+
+2) grep "EDIFICIO D" consumos.txt -A 6 > b.txt|grep "40" b.txt -A 4 > d.txt|rm b.txt
+
+3) grep "TOTAL" totales.txt > file2.txt|grep "V" consumos.txt >> file2.txt|grep "140" totales.txt -A 4 >> file2.txt
+
+4) grep -E '[0-9][0-9]|[0-1][0-9][0-9]' file2.txt | grep -v '[2-9][0-9][0-9]' > file3.txt
